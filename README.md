@@ -16,28 +16,28 @@
 
 # ✅ 实现功能
 - ADB类
- - 重启至FastBoot
- - 重启至Recovery
- - 重启
- - 检测设备连接
- - 安装APK
- - Shell终端
+  - 重启至FastBoot
+  - 重启至Recovery
+  - 重启
+  - 检测设备连接
+  - 安装APK
+  - Shell终端
 - FastBoot类
- - 重启至系统
- - 重启至Recovery
+  - 重启至系统
+  - 重启至Recovery
 - 一键刷入类
- - 刷入Recovery
- - 刷入Boot
+  - 刷入Recovery
+  - 刷入Boot
 - 小工具
- - 打开一个具备ADB环境的终端窗口
+  - 打开一个具备ADB环境的终端窗口
 
 # 💝 即将实现的功能
 - ADB类
- - 截图
+  - 截图
 - 一键刷入类
- - 一键刷入线刷包
+  - 一键刷入线刷包
 - 小工具类
- - 解压线刷包
+  - 解压线刷包
 
 # 🔶 大家投稿的功能
 *tips: 这个分类是指投稿但还没打算去实现的功能*
