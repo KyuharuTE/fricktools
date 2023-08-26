@@ -1,7 +1,7 @@
-<h1 style="text-align:center">搞姬工具箱</h1>
+<h1 align="center">搞姬工具箱</h1>
 
-<div style="text-align:center">
-搞姬工具箱是一款**开源、免费**的**安卓刷机、玩机、搞机**工具箱
+<div align="center">
+搞姬工具箱是一款开源、免费的安卓刷机、玩机、搞机工具箱
 </div>
 
 ------------
