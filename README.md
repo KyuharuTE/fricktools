@@ -23,6 +23,7 @@
   - 安装APK
   - Shell终端
 - FastBoot类
+  - 检测设备连接 
   - 重启至系统
   - 重启至Recovery
 - 一键刷入类
