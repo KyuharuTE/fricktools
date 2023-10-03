@@ -8,7 +8,9 @@
 
 
 # 💖 下载地址
-- 蓝奏云：[https://wwfm.lanzouj.com/b04wcdb9c](https://wwfm.lanzouj.com/b04wcdb9c "https://wwfm.lanzouj.com/b04wcdb9c")
+- 蓝奏云（维护）：[https://wwfm.lanzouj.com/b04wcdb9c](https://wwfm.lanzouj.com/b04wcdb9c "https://wwfm.lanzouj.com/b04wcdb9c")
+- Gitee Releases：[https://gitee.com/kyuharu/fricktools/releases/](https://gitee.com/kyuharu/fricktools/releases/ "https://gitee.com/kyuharu/fricktools/releases/")
+- Github Releases：[https://github.com/KyuharuTE/fricktools/releases](https://github.com/KyuharuTE/fricktools/releases "https://github.com/KyuharuTE/fricktools/releases")
 
 ------------
 
@@ -22,6 +24,7 @@
   - 检测设备连接
   - 安装APK
   - Shell终端
+  - 截图
 - FastBoot类
   - 检测设备连接 
   - 重启至系统
@@ -29,14 +32,11 @@
 - 一键刷入类
   - 刷入Recovery
   - 刷入Boot
+  - 一键刷入线刷包
 - 小工具
   - 打开一个具备ADB环境的终端窗口
 
 # 💝 即将实现的功能
-- ADB类
-  - 截图
-- 一键刷入类
-  - 一键刷入线刷包
 - 小工具类
   - 解压线刷包
 
