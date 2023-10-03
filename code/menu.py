@@ -1,4 +1,5 @@
 import os
+import time
 from const import const
 
 class menu:
@@ -45,7 +46,7 @@ class menu:
                 input('请输入数字！按Enter返回...')
     
     def flash_menu():
-        _menu=["刷入BOOT","刷入Recovery"]
+        _menu=["刷入BOOT","刷入Recovery","一键刷入线刷包(暂未测试)"]
         
         while True:
             os.system('cls')
@@ -79,13 +80,33 @@ class menu:
                             path=input(r'请输入Recovery文件路径（如：C:\rec.img）：')
                             os.system(const.fastboot_exe+' flash recovery '+path)
                             input('刷入完成，按Enter返回...')
+                        case 3:
+                            os.system('cls')
+                            path=input(r'请输入线刷包解压后的目录（如：C:\xianshuabao\miui-xxx）：')
+                            while True:
+                                mode=input('（1）清除全部数据并刷入\n（2）保留全部数据并刷入\n（3）刷入并上锁\n请选择刷入模式：')
+                                if mode == "1":
+                                    os.system(path+r'\flash_all.bat')
+                                    input('刷入完成，按Enter返回...')
+                                    break
+                                elif mode == "2":
+                                    os.system(path+r'\flash_all_except_storage.bat')
+                                    input('刷入完成，按Enter返回...')
+                                    break
+                                elif mode == "3":
+                                    os.system(path+r'\flash_all_lock.bat')
+                                    input('刷入完成，按Enter返回...')
+                                    break
+                                else:
+                                    print('请输入正确序号')
+
                 else:
                     input('请输入序号！按Enter返回...')
 
             except Exception:
                 input('请输入数字！按Enter返回...')
     def adb_menu():
-        _menu=["检测设备","重启","重启至FastBoot","重启至Recovery","安装APK","Shell终端"]
+        _menu=["检测设备","重启","重启至FastBoot","重启至Recovery","安装APK","Shell终端","截图"]
         
         while True:
             os.system('cls')
@@ -135,6 +156,18 @@ class menu:
                             # sh
                             os.system('cls')
                             os.system(const.adb_exe+' shell')
+                        case 7:
+                            # screencap
+                            os.system('cls')
+                            input('将存放在 '+os.getcwd()+r'\screencap 目录中')
+                            path_name=time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime())+'.png'
+                            os.system(const.adb_exe+' shell rm -r /sdcard/frick_cache')
+                            os.system(const.adb_exe+' shell mkdir /sdcard/frick_cache')
+                            os.system(const.adb_exe+' shell screencap -p /sdcard/frick_cache/'+path_name)
+                            xie='\\'
+                            os.system(const.adb_exe+' pull /sdcard/frick_cache/'+path_name+' '+os.getcwd()+r'\screencap'+xie+path_name)
+                            os.system(const.adb_exe+' shell rm /sdcard/frick_cache/'+path_name)
+                            input('执行完毕，按Enter返回...')
                 else:
                     input('请输入序号！按Enter返回...')
 
