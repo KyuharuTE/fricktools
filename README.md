@@ -57,6 +57,7 @@
 - 哔哩哔哩主页：[https://space.bilibili.com/2075226503/](https://space.bilibili.com/2075226503/ "https://space.bilibili.com/2075226503/")
 - 爱发电主页：[https://afdian.net/a/kyuharu/](https://afdian.net/a/kyuharu/ "https://afdian.net/a/kyuharu/")
 - 邮箱地址：kyuharu@foxmail.com
+- 官网：[http://fricktools.fun/](http://fricktools.fun/ "http://fricktools.fun/")
 
 # 🧡 赞助
 *tips: 作者更新软件很累的，赞助一下吧！（未成年切勿赞助，你的心意我心领了！）*
