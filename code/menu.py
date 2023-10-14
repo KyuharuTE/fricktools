@@ -203,12 +203,12 @@ class menu:
                         case 2:
                             # reboot system
                             os.system('cls')
-                            os.system(const.fastboot_exe_exe+' reboot')
+                            os.system(const.fastboot_exe+' reboot')
                             input('执行完毕，按Enter返回...')
                         case 3:
                             # reboot recovery
                             os.system('cls')
-                            os.system(const.adb_exe+' reboot recovery')
+                            os.system(const.fastboot_exe+' reboot recovery')
                             input('执行完毕，按Enter返回...')
                 else:
                     input('请输入序号！按Enter返回...')
@@ -222,7 +222,7 @@ class menu:
         while True:
             os.system('cls')
 
-            print('FastBoot菜单\n---------')
+            print('小工具菜单\n---------')
 
             menu_number=0
             for menu_in in _menu:
