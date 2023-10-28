@@ -1,8 +1,9 @@
 class const:
     fastboot_exe=r".\res\aft\fastboot.exe"
     adb_exe=r".\res\aft\adb.exe"
+    tar_exe=r".\res\tar.exe"
     
-    about='''版本：0.2 Beta
+    about='''版本：0.4 Beta
 
 作者：Kyuharu
 
