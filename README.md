@@ -25,6 +25,10 @@
   - 安装APK
   - Shell终端
   - 截图
+  - 无线调试
+  - 激活APP菜单(ADB)
+    - Shizuku
+    - 冰箱（Ice Box）
 - FastBoot类
   - 检测设备连接 
   - 重启至系统
