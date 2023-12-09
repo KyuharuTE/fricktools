@@ -106,7 +106,7 @@ class menu:
             except Exception:
                 input('请输入数字！按Enter返回...')
     def adb_menu(self):
-        _menu=["检测设备","重启","重启至FastBoot","重启至Recovery","安装APK","Shell终端","截图"]
+        _menu=["检测设备","重启","重启至FastBoot","重启至Recovery","安装APK","Shell终端","截图","无线调试","激活APP菜单(ADB)"]
         
         while True:
             os.system('cls')
@@ -168,6 +168,51 @@ class menu:
                             os.system(const.adb_exe+' pull /sdcard/frick_cache/'+path_name+' '+os.getcwd()+r'\screencap'+xie+path_name)
                             os.system(const.adb_exe+' shell rm /sdcard/frick_cache/'+path_name)
                             input('执行完毕，按Enter返回...')
+                        case 8:
+                            #adb connect
+
+                            #Get ip
+                            ip=input("请输入IP：")
+                            
+                            #if ipv4
+                            count=ip.count(".")
+                            if count > 3:
+                                input("请输入IP v4！按Enter返回...")
+                                del ip,count
+                                break
+                            elif count < 3:
+                                input("请输入正确IP！按Enter返回...")
+                                del ip,count
+                                break
+
+                            port=input('请输入端口：')
+
+                            #conncet
+                            os.system(const.adb_exe+" conncet "+ip+":"+port)
+                            input("执行成功，仅在本次生效！按Enter返回...")
+                        case 9:
+
+                            os.system('cls')
+                            
+                            print("当前支持的APP：")
+
+                            applist=0
+                            for applist_sublist in const.letapp:
+                                applist=applist+1
+                                print('('+str(applist)+')'+applist_sublist+'\n---------')
+
+                            applist_selcel=input('请输入序号：')
+                            
+                            # select
+                            if applist_selcel == '1':
+                                os.system(const.adb_exe+" shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh")
+                                input("激活成功！按Enter返回...")
+                            elif applist_selcel == '2':
+                                os.system(const.adb_exe+' shell sh /sdcard/Android/data/com.catchingnow.icebox/files/start.sh')
+                                input("激活成功！按Enter返回...")
+                            else:
+                                input('错误！按Enter返回...')
+
                 else:
                     input('请输入序号！按Enter返回...')
 
