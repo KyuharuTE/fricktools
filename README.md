@@ -1,5 +1,7 @@
 <h1 align="center">搞姬工具箱</h1>
 
+<h2>本项目目前仅在 Gitee 更新</h2>
+
 <div align="center">
 搞姬工具箱是一款开源、免费的安卓刷机、玩机、搞机工具箱
 </div>
